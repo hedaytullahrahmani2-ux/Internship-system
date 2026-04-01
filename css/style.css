@@ -1,0 +1,244 @@
+
+/* =======================
+   1. Custom Variables
+======================= */
+:root {
+    --primary: #4f46e5;
+    --secondary: #06b6d4;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
+}
+
+/* =======================
+   2. Reset
+======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* =======================
+   3. Body
+======================= */
+body {
+    background: linear-gradient(to right, var(--light), #e0f2fe);
+    color: var(--dark);
+}
+
+/* =======================
+   4. Header (Flexbox)
+======================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--dark);
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: var(--primary);
+}
+
+/* =======================
+   5. Buttons
+======================= */
+button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--secondary);
+    transform: scale(1.05);
+}
+
+/* =======================
+   6. Hero
+======================= */
+.hero {
+    padding: 60px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    color: var(--gray);
+}
+
+/* =======================
+   7. Features (Grid)
+======================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid article {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.grid article:hover {
+    transform: translateY(-10px);
+}
+
+/* =======================
+   8. System + Objectives
+======================= */
+.system, .objectives {
+    padding: 40px;
+}
+
+ul {
+    margin-top: 15px;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+/* =======================
+   9. Video Section
+======================= */
+.demo {
+    text-align: center;
+    padding: 40px;
+}
+
+video {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* =======================
+   10. FAQ
+======================= */
+#faq {
+    padding: 40px;
+}
+
+details {
+    margin: 10px 0;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* =======================
+   11. Forms
+======================= */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+.form input, .form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* =======================
+   12. Dashboard
+======================= */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =======================
+   13. Table
+======================= */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* =======================
+   14. Footer
+======================= */
+.footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .social a {
+    color: #38bdf8;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* =======================
+   15. Animation
+======================= */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* =======================
+   16. Responsive
+======================= */
+@media (max-width: 768px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+}
