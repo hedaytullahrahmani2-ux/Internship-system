@@ -1,10 +1,9 @@
-
 :root {
     --primary: #4f46e5;
     --secondary: #06b6d4;
     --dark: #1e293b;
     --light: #f8fafc;
-    --gray: #64748b;
+    --gray: #1b437a;
 }
 
 
@@ -15,9 +14,14 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+
+    direction: rtl;
+    text-align: right;
+}
 
 body {
-    background: linear-gradient(to right, var(--light), #e0f2fe);
+    background: linear-gradient(to right, var(--light), #dcdde4);
     color: var(--dark);
 }
 
@@ -26,37 +30,55 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row-reverse;
     padding: 15px 30px;
-    background: white;
+    background: rgb(125, 166, 219);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+
 .nav a {
+    
+      padding: 8px 15px;
+    border: 2px solid #7554aa;
+    border-radius: 8px;
+    color: #06b6d4;
+    transition: 0.3s;
+    
+    color: rgb(203, 209, 206);
+    background-color: #e6ba2a;
+
     margin: 0 10px;
     text-decoration: none;
     color: var(--dark);
     transition: 0.3s;
 }
-
-.nav a:hover {
-    color: var(--primary);
+.auth a {
+    border: 2px solid #7554aa;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-left: 5px;
+    text-decoration: none;
+    background-color: #e6ba2a;
+     transition: 0.3s;
 }
 
-
 button {
-    padding: 10px 20px;
-    border: none;
-    background: var(--primary);
+    background: linear-gradient(45deg, #d8ac1c,#e6ba2a);
     color: white;
-    border-radius: 8px;
+    padding: 10px 20px;
+    border: #e9780e;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 button:hover {
-    background: var(--secondary);
     transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+
 
 .hero {
     padding: 60px;
@@ -82,12 +104,20 @@ button:hover {
 }
 
 .grid article {
-    background: white;
+    background: rgb(154, 173, 146);
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
     transition: 0.3s;
+
+    .fa-user { color: #4f46e5; }     
+.fa-file { color: #970de7; }     
+.fa-building { color: #062c72; } 
+.fa-star { color: #eae608; }     
+.fa-chart-line { color: #e9780e; }
+.fa-lock { color: #0fdf20; }
 }
+
 
 .grid article:hover {
     transform: translateY(-10px);
@@ -108,12 +138,12 @@ ul li {
 
 .demo {
     text-align: center;
-    padding: 40px;
+    padding: 50px;
 }
 
 video {
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(78, 74, 74, 0.2);
 }
 
 #faq {
@@ -172,7 +202,7 @@ th, td {
 
 .footer {
     background: var(--dark);
-    color: white;
+    color: rgba(194, 193, 193, 0.89);
     text-align: center;
     padding: 20px;
 }
@@ -191,10 +221,8 @@ th, td {
     to {opacity: 1;}
 }
 
-/* 
- Responsive
- */
-@media (max-width: 768px) {
+
+ @media (max-width: 768px) {
 
     .grid {
         grid-template-columns: 1fr;
