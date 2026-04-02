@@ -1,0 +1,14 @@
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
