@@ -21,10 +21,6 @@
     font-weight: bold;
 }
 
-
-
-
-
 body {
 
     direction: rtl;
@@ -99,7 +95,7 @@ button:hover {
 .hero h1 {
     font-size: 36px;
     margin-bottom: 15px;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 4s ease-in-out;
 }
 
 .hero p {
@@ -113,7 +109,6 @@ button:hover {
     gap: 20px;
     padding: 40px;
 }
-
 .grid article {
     background: rgb(154, 173, 146);
     padding: 20px;
@@ -163,25 +158,71 @@ video {
 
 details {
     margin: 10px 0;
-    background: white;
+    background: rgb(154, 173, 146);
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
 }
 
+.report-section {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
 
 .form {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: auto;
+    gap: 15px;
 }
 
-.form input, .form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
+.file-label {
+    background: #007bff;
+    color: white;
+    padding: 12px;
     border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.file-label:hover {
+    background: #0056b3;
+}
+
+.file-label input {
+    display: none;
+}
+
+#fileName {
+    font-size: 14px;
+    color: gray;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background:  #e6ba2a;
+    color: black;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+button i {
+    margin-left: 5px;
+    transition: 0.3s;
 }
 
 .dashboard {
@@ -192,7 +233,7 @@ details {
 
 .card {
     flex: 1;
-    background: #a5c5ee;
+    background: rgb(154, 173, 146);
     padding: 10px;
     border-radius: 10px;
     
@@ -202,7 +243,7 @@ details {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 3px solid #01ff88;
+    border: 3px solid rgb(94, 94, 235);
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
@@ -223,7 +264,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #dad9d9;
     padding: 10px;
 }
 
@@ -254,6 +295,7 @@ th, td {
 }
 
 .social-icons i {
+    color: #2c5364;
     font-size: 22px;
     margin: 10px;
     cursor: pointer;
@@ -270,8 +312,6 @@ copyright {
     font-size: 14px;
 }
 
-
-
 /* 
     Animation
  */
@@ -280,20 +320,4 @@ copyright {
     to {opacity: 1;}
 }
 
-
- @media (max-width: 768px) {
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .dashboard {
-        flex-direction: column;
-    }
-
-    .header {
-        flex-direction: column;
-    }
-
-}
 
