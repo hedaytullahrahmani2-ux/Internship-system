@@ -6,19 +6,23 @@
     --gray: #1b437a;
 }
 
-.header .logo img {
-    width: 50px;                 
-    height: 50px;
-    object-fit: contain;         
+.logo {
+    display: flex;
+    align-self: center;
+    gap: 8px;
+}
+.logo img {
+    width: 45px;
+}
+.logo span {
+    color:  rgb(15, 15, 15);
+    margin: 7px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+
 
 
 body {
@@ -188,10 +192,27 @@ details {
 
 .card {
     flex: 1;
-    background: white;
-    padding: 20px;
+    background: #a5c5ee;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #01ff88;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.stars{
+    margin: 10px;
+}
+.stars i {
+    color: gold;
+    font-size: 18px;
+    margin: 0 2px;
 }
 
 
