@@ -16,8 +16,8 @@
 }
 .logo span {
     color:  rgb(15, 15, 15);
-    margin: 7px;
-    font-size: 18px;
+    margin: 8px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -32,13 +32,19 @@ body {
     color: var(--dark);
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 15px 30px;
+    padding: 30px 45px;
     background: rgb(125, 166, 219);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -163,6 +169,29 @@ details {
     border-radius: 8px;
     cursor: pointer;
 }
+.signup-section {
+    width: 90;
+    max-width: 400;
+    padding: 20px;
+    background: gray;
+    margin: 50 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+.login-section {
+    width: 90;
+    max-width: 400;
+    padding: 20px;
+    background: gray;
+    margin: 50 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
 
 .report-section {
     max-width: 500px;
@@ -178,7 +207,7 @@ details {
 }
 
 .file-label {
-    background: #007bff;
+    background: rgb(71, 131, 209);
     color: white;
     padding: 12px;
     border-radius: 8px;
@@ -187,7 +216,7 @@ details {
 }
 
 .file-label:hover {
-    background: #0056b3;
+    background: darkgreen;
 }
 
 .file-label input {
@@ -202,7 +231,7 @@ details {
 textarea {
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(154, 173, 146);
     resize: none;
     height: 100px;
 }
@@ -312,9 +341,8 @@ copyright {
     font-size: 14px;
 }
 
-/* 
-    Animation
- */
+
+
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
