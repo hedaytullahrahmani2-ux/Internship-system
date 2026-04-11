@@ -101,7 +101,7 @@ button:hover {
 .hero h1 {
     font-size: 36px;
     margin-bottom: 15px;
-    animation: fadeIn 4s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
 }
 
 .hero p {
@@ -119,10 +119,9 @@ button:hover {
     background: rgb(154, 173, 146);
     padding: 20px;
     border-radius: 12px;
-    
-    transition: 0.3s;
+    transition: 0.3s; 
 
-    .fa-user { color: #4f46e5; }     
+.fa-user { color: #4f46e5; }     
 .fa-file { color: #970de7; }     
 .fa-building { color: #062c72; } 
 .fa-star { color: #eae608; }     
@@ -130,14 +129,13 @@ button:hover {
 .fa-lock { color: #0fdf20; }
 }
 
-
 .grid article:hover {
     transform: translateY(-10px);
 }
 
 
 .system, .objectives {
-    padding: 40px;
+    padding: 50px;
 }
 
 ul {
@@ -149,14 +147,34 @@ ul li {
 }
 
 .demo {
-    text-align: center;
-    padding: 50px;
+    background: rgb(125, 166, 219);
+    color: black;
+    padding: 40px;
+}
+  .demo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-video {
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(78, 74, 74, 0.2);
+.video-box {
+    max-width: 600px;
+    margin: auto;
 }
+
+.video-box video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transform: transition 0.3s ease;;
+
+}
+.video-box:hover video{
+    transform: scale(1.05);
+}
+
 
 #faq {
     padding: 40px;
@@ -174,7 +192,6 @@ details {
     max-width: 400;
     padding: 20px;
     background: gray;
-    margin: 50 auto;
     text-align: center;
     margin-top: 50px;
     margin-left: 600px;
@@ -185,7 +202,6 @@ details {
     max-width: 400;
     padding: 20px;
     background: gray;
-    margin: 50 auto;
     text-align: center;
     margin-top: 50px;
     margin-left: 600px;
@@ -246,7 +262,7 @@ button {
 }
 
 button:hover {
-    background: darkgreen;
+    background: rgb(1, 104, 1);
 }
 
 button i {
@@ -275,6 +291,7 @@ button i {
     border: 3px solid rgb(94, 94, 235);
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
+
 
 .stars{
     margin: 10px;
@@ -348,4 +365,38 @@ copyright {
     to {opacity: 1;}
 }
 
+ .card {
+    transition: 0.3s ease;
+}
 
+ .card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(13, 34, 226, 0.2);
+}
+ 
+.nav a:hover {
+    background: #e6ba2a;
+    color: rgb(238, 236, 236);
+    transform: translateY(-3px);
+}
+
+.stars i {
+    transition: 0.3s;
+}
+
+.stars i:hover {
+    transform: scale(1.3);
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #d8ac1c;
+}
+
+.logo img {
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
